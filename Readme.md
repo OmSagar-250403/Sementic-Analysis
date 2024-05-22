@@ -1,4 +1,4 @@
-# Project Name
+# Sementic Analysis
 
 ## Overview
 Develop a system that collects job postings from open job sites of your choice (such as LinkedIn and Indeed, Naukri) within the Information Technology domain, and implements a semantic search functionality that outperforms the site's native search in fetching relevant job posts.
