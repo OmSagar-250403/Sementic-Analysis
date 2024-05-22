@@ -1,0 +1,26 @@
+Challenges Faced and Solutions Implemented
+
+1. Limited Job Posting Data Availability
+Challenge: Initially encountered difficulties in scraping a substantial number of job postings due to limitations imposed by job sites and access restrictions.
+Solution: Utilized iterative scraping techniques and optimized request parameters to bypass anti-scraping measures. Employed rotating proxies and user-agent headers to mitigate IP bans and detection.
+
+2. Limited Dataset Size
+Challenge: Despite efforts, could only collect a total of 336 job postings, falling short of the targeted 1000 postings.
+Solution: Augmented the dataset by synthesizing additional data through data augmentation techniques such as text paraphrasing and augmentation. This helped increase the diversity and size of the dataset for training and evaluation.
+
+3. Exploration of Semantic Search Models
+Challenge: Initially attempted to implement semantic search using OpenAI's models but faced challenges in compatibility and resource constraints.
+Solution: Switched to leveraging models like MiniLM, which offered a more feasible solution with comparable performance. Explored the relationship between OpenAI's language models and MiniLM, identifying similarities in their architecture and training objectives.
+
+4. Comparative Analysis of Models
+Challenge: Understanding the differences and similarities between models like MiniLM and OpenAI's models for semantic search tasks.
+Solution: Conducted comprehensive literature review and experimentation to compare the effectiveness and performance of different models. Analyzed the architectural differences and training methodologies to determine their impact on semantic understanding and search accuracy.
+
+5. Training Resource Constraints
+Challenge: Faced resource constraints in training complex semantic search models like MiniLM with limited computational resources.
+Solution: Optimized model hyperparameters and utilized transfer learning techniques to fine-tune pre-trained models. Leveraged cloud-based GPU instances for accelerated model training and experimentation.
+
+6. Model Evaluation and Interpretability
+Challenge: Evaluating the performance of semantic search models and interpreting the results effectively.
+Solution: Employed standard evaluation metrics such as Mean Average Precision (MAP) and Precision-Recall curves to assess model performance. Visualized model embeddings and search results using techniques like t-SNE to gain insights into model behavior and clustering patterns.
+
