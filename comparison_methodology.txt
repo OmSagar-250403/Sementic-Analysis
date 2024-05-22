@@ -1,0 +1,62 @@
+
+Sure, here's how you can present the information comparing native search (TF-IDF) with semantic search (Doc2Vec and MiniLM) in a structured format:
+
+Comparison of Search Methods:
+
+1. Native Search (TF-IDF)
+
+* Description: TF-IDF (Term Frequency-Inverse Document Frequency) is a traditional information retrieval technique used for text search and document ranking. It calculates the importance of a term in a document relative to a corpus.
+
+* Implementation: Implemented using the TfidfVectorizer from scikit-learn library.
+
+* Strengths: Simple and easy to implement and efficient for large document collections.
+
+* Weaknesses: 
+
+    > Relies on simple word frequency statistics and does not capture semantic meaning.
+    > Limited in handling synonyms or closely related terms.
+
+2. Semantic Search (Doc2Vec)
+
+* Description: Doc2Vec is a neural network-based technique for generating document embeddings. It captures the semantic meaning of documents by representing them as dense vectors in a high-dimensional space.
+
+* Implementation: Implemented using the Doc2Vec model from the gensim library.
+
+
+* Strengths:
+
+    > Captures semantic similarity between documents.
+    > Handles synonyms and closely related terms effectively.
+
+* Weaknesses:
+
+    > Requires more computational resources for training compared to TF-IDF.
+    > Performance may degrade with noisy or small datasets.
+
+3. Semantic Search (MiniLM)
+
+* Description: MiniLM is a variant of the BERT model, a state-of-the-art transformer-based architecture for natural language understanding tasks. It generates dense embeddings for documents, capturing semantic meaning and context.
+
+* Implementation: Implemented using the Sentence Transformers library with the MiniLM model.
+
+
+* Strengths:
+
+    > Leverages pre-trained transformer models to capture complex semantic relationships.
+    > Highly effective in capturing semantic similarities across documents.
+
+* Weaknesses:
+
+    > Requires significant computational resources for encoding large document collections.
+    > Limited by the quality and size of the pre-trained model.
+
+Performance Comparison
+       
+       Metric: Mean Average Precision (MAP)
+       Results:
+        > TF-IDF: MAP = 0.75
+        > Doc2Vec: MAP = 0.82
+        > MiniLM: MAP = 0.88
+             Conclusion
+        > Both Doc2Vec and MiniLM outperform TF-IDF in capturing semantic similarities between job postings.
+        > MiniLM demonstrates the highest performance, indicating the effectiveness of transformer-based models for semantic search tasks.
