@@ -42,5 +42,5 @@ pip install pandas gradio scikit-learn gensim sentence-transformers
 ## Contact
 For any inquiries or feedback regarding this project, please contact the project maintainer:
 
-Email: mishrasagar2504032@gmail.com
+Email: mishrasagar250403@gmail.com
 
